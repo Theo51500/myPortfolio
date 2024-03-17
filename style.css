@@ -10,5 +10,176 @@
 
 body {
     font-family: "Montserrat", sans-serif;
+    background-color: #161616;
 }
+
+/* NAVBAR PART */
+
+#navBar {
+    background-color: #161616;
+    opacity: 85%;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+}
+
+#navBar a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+} 
+
+#navBar > a:not(:first-child):not(:last-child) {
+    margin-left: 70px;
+}
+
+#navBar .align-right {
+    margin-left: auto;
+}
+
+/* HEADER PART */
+
+header {
+    background-image: url(assets/headerBackground.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+}
+
+.backgroundBlur {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #16161600;
+    backdrop-filter: blur(6px);
+    z-index: -1;
+}
+
+.header-content {
+    padding: 325px 15rem;
+}
+
+header .header-content .iconsContainer .icon {
+    width: 60px;
+}
+
+header .header-content #myName {
+    color: #fff;
+    font-size: 82px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-shadow: 6px 3px 5px #0c0c0c;
+}
+
+header .header-content #myName span {
+    font-weight: 900;
+}
+
+header .header-content .profession {
+    color: #fff;
+    font-size: 42px;
+    font-weight: lighter;
+    letter-spacing: 0.5rem;
+    text-shadow: 6px 3px 5px #0c0c0c;
+}
+
+header .header-content .iconsContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin-top: 30px;
+    text-shadow: 6px 3px 5px #0c0c0c;
+}
+
+header .gradient {
+    width: 100%;
+    height: 250px;
+    background: rgb(22,22,22);
+    background: linear-gradient(0deg, rgba(22,22,22,1) 0%, rgba(22,22,22,0) 100%);
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* PORTFOLIO PART  */
+
+section h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    margin: 200px 0 100px 0;
+}
+
+section.portfolio .card-project {
+    width: 350px;
+    height: 475px;
+    background-color: #EDEDED;
+    border-radius: 26px;
+    overflow: hidden;
+}
+section.portfolio .card-project .card-content {
+    padding: 20px;
+}
+
+section.portfolio .card-project img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+section.portfolio .card-project h3 {
+    margin-bottom: 20px;
+}
+section.portfolio .card-project p {
+    margin-bottom: 40px;
+}
+section.portfolio .card-project span {
+    background-color: #161616;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 99px;
+    font-weight: 600;
+}
+
+section.portfolio .portfolio-container {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+section.about {
+    width: 70%;
+    margin: 0 auto;
+}
+
+section.about h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: lighter;
+}
+
+section.about p {
+    color: #fff;
+    font-size: 1.3rem;
+    width: 50%;
+    margin: 100px auto;
+    text-align: center;
+    line-height: 45px;
+    letter-spacing: 3px;
+}
+
+
 
